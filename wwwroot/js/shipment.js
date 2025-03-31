@@ -2,7 +2,7 @@ $(document).ready(function () {
     loadShipments();
 
     const connection = new signalR.HubConnectionBuilder()
-        .withUrl("/shipmentHub")
+        .withUrl("http://localhost:5175/shipmentHub")  // Ensure port matches your app
         .build();
 
     connection.on("ReceiveShipmentUpdate", function (shipment) {
@@ -51,6 +51,19 @@ function updateStatus() {
         data: JSON.stringify(status),
         success: function () {
             $("#statusModal").modal("hide");
+            document.getElementById("statusModal").classList.remove("show");
+            document.body.classList.remove("modal-open");
+            $(".modal-backdrop").remove();
+            loadShipments();
+        },
+        error: function (xhr, status, error) {
+            console.error("Error updating status:", status, error);
+            console.error("Response:", xhr.responseText);
+            alert("Status update " + (xhr.status === 500 ? "succeeded but email failed: " : "failed: ") + xhr.responseText);
+            $("#statusModal").modal("hide");
+            document.getElementById("statusModal").classList.remove("show");
+            document.body.classList.remove("modal-open");
+            $(".modal-backdrop").remove();
             loadShipments();
         }
     });

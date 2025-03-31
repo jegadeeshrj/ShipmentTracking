@@ -37,6 +37,8 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapHub<ShipmentHub>("/shipmentHub");
 
+app.Urls.Add("http://localhost:5175");
+
 app.Run();
 
 // Ensure logger is disposed when application shuts down

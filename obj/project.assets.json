@@ -2708,11 +2708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/presidio/Desktop/github/ShipmentTracking/ShipmentTracking.csproj",
+      "projectUniqueName": "/Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/ShipmentTracking.csproj",
       "projectName": "ShipmentTracking",
-      "projectPath": "/Users/presidio/Desktop/github/ShipmentTracking/ShipmentTracking.csproj",
+      "projectPath": "/Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/ShipmentTracking.csproj",
       "packagesPath": "/Users/presidio/.nuget/packages/",
-      "outputPath": "/Users/presidio/Desktop/github/ShipmentTracking/obj/",
+      "outputPath": "/Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/presidio/.nuget/NuGet/NuGet.Config"

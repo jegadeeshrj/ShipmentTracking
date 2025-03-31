@@ -1515,3 +1515,910 @@ System.Net.Mail.SmtpException: The SMTP server requires a secure connection or t
 2025-03-31 18:13:49.273 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 322.5334ms
 2025-03-31 18:13:49.274 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
 2025-03-31 18:13:49.274 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 323.2204ms
+2025-03-31 18:33:57.061 +05:30 [INF] User profile is available. Using '/Users/presidio/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-03-31 18:33:57.124 +05:30 [INF] Now listening on: http://localhost:5175
+2025-03-31 18:33:57.126 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-31 18:33:57.126 +05:30 [INF] Hosting environment: Development
+2025-03-31 18:33:57.126 +05:30 [INF] Content root path: /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking
+2025-03-31 18:33:57.314 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 18:33:57.320 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-03-31 18:33:57.332 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:33:57.373 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 18:33:57.401 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 18:33:57.431 +05:30 [INF] Executed ViewResult - view Index executed in 26.7958ms.
+2025-03-31 18:33:57.436 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 62.3165ms
+2025-03-31 18:33:57.437 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:33:57.438 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 18:33:57.441 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 128.0264ms
+2025-03-31 18:33:57.441 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 4.6437ms
+2025-03-31 18:33:57.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/js/shipment.js - null null
+2025-03-31 18:33:57.514 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 18:33:57.517 +05:30 [INF] The file /js/shipment.js was not modified
+2025-03-31 18:33:57.518 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/js/shipment.js - 304 null text/javascript 3.6491ms
+2025-03-31 18:33:57.521 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 18:33:57.522 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:33:57.527 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:33:57.528 +05:30 [INF] GET all shipments requested at "2025-03-31T18:33:57.5284160+05:30"
+2025-03-31 18:33:57.627 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/favicon.ico - null null
+2025-03-31 18:33:57.627 +05:30 [INF] Returning 3 shipments
+2025-03-31 18:33:57.627 +05:30 [INF] The file /favicon.ico was not modified
+2025-03-31 18:33:57.628 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/favicon.ico - 304 null image/x-icon 0.8003ms
+2025-03-31 18:33:57.632 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 18:33:57.663 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 136.4268ms
+2025-03-31 18:33:57.664 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:33:57.664 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 143.4247ms
+2025-03-31 18:34:14.289 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 87
+2025-03-31 18:34:14.290 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:34:14.301 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:34:14.315 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:34:14.3151430+05:30"
+2025-03-31 18:34:18.013 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 3711.4542ms
+2025-03-31 18:34:18.013 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:34:18.014 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:34:18.029 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 3740.3638ms
+2025-03-31 18:34:18.255 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 18:34:18.255 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:34:18.256 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 18:34:18.257 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 18:34:18.310 +05:30 [INF] Executed ViewResult - view Index executed in 53.6379ms.
+2025-03-31 18:34:18.310 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 54.4564ms
+2025-03-31 18:34:18.310 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:34:18.310 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 55.4236ms
+2025-03-31 18:34:18.324 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 18:34:18.324 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.643ms
+2025-03-31 18:34:18.325 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 18:34:18.330 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 18:34:18.330 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:34:18.330 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:34:18.331 +05:30 [INF] GET all shipments requested at "2025-03-31T18:34:18.3310070+05:30"
+2025-03-31 18:34:18.655 +05:30 [INF] Returning 3 shipments
+2025-03-31 18:34:18.656 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 18:34:18.657 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 326.6247ms
+2025-03-31 18:34:18.657 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:34:18.657 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 327.7017ms
+2025-03-31 18:43:01.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 18:43:01.842 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:43:01.843 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 18:43:01.847 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 18:43:01.850 +05:30 [INF] Executed ViewResult - view Index executed in 4.203ms.
+2025-03-31 18:43:01.850 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 7.0072ms
+2025-03-31 18:43:01.850 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:43:01.850 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 13.1981ms
+2025-03-31 18:43:01.864 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 18:43:01.864 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.7645ms
+2025-03-31 18:43:01.864 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 18:43:01.900 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 18:43:01.900 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:43:01.900 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:43:01.901 +05:30 [INF] GET all shipments requested at "2025-03-31T18:43:01.9015170+05:30"
+2025-03-31 18:43:01.915 +05:30 [INF] Returning 3 shipments
+2025-03-31 18:43:01.916 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 18:43:01.917 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 16.7296ms
+2025-03-31 18:43:01.917 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:43:01.918 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 17.9393ms
+2025-03-31 18:43:35.793 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 86
+2025-03-31 18:43:35.796 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:43:35.796 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:43:35.801 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:43:35.8011800+05:30"
+2025-03-31 18:43:38.189 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2392.4612ms
+2025-03-31 18:43:38.189 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:43:38.190 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:43:38.192 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2399.6097ms
+2025-03-31 18:43:46.993 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 18:43:46.993 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:43:46.994 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 18:43:46.995 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 18:43:46.997 +05:30 [INF] Executed ViewResult - view Index executed in 1.5689ms.
+2025-03-31 18:43:47.020 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 24.4083ms
+2025-03-31 18:43:47.021 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 18:43:47.021 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:43:47.022 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 28.6786ms
+2025-03-31 18:43:47.046 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 25.609ms
+2025-03-31 18:43:47.046 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 18:43:47.049 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 18:43:47.049 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:43:47.050 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:43:47.050 +05:30 [INF] GET all shipments requested at "2025-03-31T18:43:47.0504760+05:30"
+2025-03-31 18:43:47.149 +05:30 [INF] Returning 3 shipments
+2025-03-31 18:43:47.224 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 18:43:47.250 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 200.0353ms
+2025-03-31 18:43:47.250 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:43:47.250 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 200.8347ms
+2025-03-31 18:44:08.934 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Home/CustomerDashboard?trackingNumber=SH987654321 - null null
+2025-03-31 18:44:08.988 +05:30 [INF] Executing endpoint 'HomeController.CustomerDashboard (ShipmentTracking)'
+2025-03-31 18:44:08.996 +05:30 [INF] Route matched with {action = "CustomerDashboard", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerDashboard(System.String) on controller HomeController (ShipmentTracking).
+2025-03-31 18:44:09.154 +05:30 [INF] Executing ViewResult, running view CustomerDashboard.
+2025-03-31 18:44:09.163 +05:30 [INF] Executed ViewResult - view CustomerDashboard executed in 11.7309ms.
+2025-03-31 18:44:09.163 +05:30 [INF] Executed action HomeController.CustomerDashboard (ShipmentTracking) in 167.0632ms
+2025-03-31 18:44:09.163 +05:30 [INF] Executed endpoint 'HomeController.CustomerDashboard (ShipmentTracking)'
+2025-03-31 18:44:09.163 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Home/CustomerDashboard?trackingNumber=SH987654321 - 200 null text/html; charset=utf-8 254.8772ms
+2025-03-31 18:44:09.190 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 18:44:09.190 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.4955ms
+2025-03-31 18:44:09.190 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 18:44:09.201 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 18:44:09.202 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:44:09.202 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:44:09.202 +05:30 [INF] GET all shipments requested at "2025-03-31T18:44:09.2025120+05:30"
+2025-03-31 18:44:09.348 +05:30 [INF] Returning 3 shipments
+2025-03-31 18:44:09.468 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 18:44:09.469 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 267.4768ms
+2025-03-31 18:44:09.470 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:44:09.470 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 268.3349ms
+2025-03-31 18:50:30.795 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 80
+2025-03-31 18:50:30.798 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:50:30.799 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:50:30.802 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:50:30.8027380+05:30"
+2025-03-31 18:50:32.314 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 80
+2025-03-31 18:50:32.314 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:50:32.314 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:50:32.315 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:50:32.3157690+05:30"
+2025-03-31 18:50:32.767 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 80
+2025-03-31 18:50:32.767 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:50:32.767 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:50:32.768 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:50:32.7681110+05:30"
+2025-03-31 18:50:34.214 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 3414.4037ms
+2025-03-31 18:50:34.214 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:50:34.214 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:50:34.216 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 3421.2418ms
+2025-03-31 18:50:34.566 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2251.9892ms
+2025-03-31 18:50:34.567 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:50:34.567 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:50:34.568 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2254.5069ms
+2025-03-31 18:50:34.821 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2053.7855ms
+2025-03-31 18:50:34.821 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:50:34.821 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:50:34.822 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2055.4ms
+2025-03-31 18:52:28.868 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 80
+2025-03-31 18:52:28.873 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:52:28.874 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:52:28.878 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:52:28.8785190+05:30"
+2025-03-31 18:52:30.257 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 18:52:30.258 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:52:30.258 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 18:52:30.260 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 18:52:30.261 +05:30 [INF] Executed ViewResult - view Index executed in 1.602ms.
+2025-03-31 18:52:30.261 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 2.9528ms
+2025-03-31 18:52:30.261 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:52:30.261 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 3.8318ms
+2025-03-31 18:52:30.278 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 18:52:30.279 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.5283ms
+2025-03-31 18:52:30.279 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 18:52:30.281 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/js/shipment.js - null null
+2025-03-31 18:52:30.294 +05:30 [INF] Sending file. Request path: '/js/shipment.js'. Physical path: '/Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/wwwroot/js/shipment.js'
+2025-03-31 18:52:30.295 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/js/shipment.js - 200 2491 text/javascript 13.3857ms
+2025-03-31 18:52:30.318 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 18:52:30.318 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:52:30.318 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:52:30.319 +05:30 [INF] GET all shipments requested at "2025-03-31T18:52:30.3191990+05:30"
+2025-03-31 18:52:30.442 +05:30 [INF] Returning 3 shipments
+2025-03-31 18:52:30.442 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/favicon.ico - null null
+2025-03-31 18:52:30.490 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 18:52:30.516 +05:30 [INF] The file /favicon.ico was not modified
+2025-03-31 18:52:30.562 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/favicon.ico - 304 null image/x-icon 120.2946ms
+2025-03-31 18:52:30.563 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 244.2653ms
+2025-03-31 18:52:30.565 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:52:30.565 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 246.8787ms
+2025-03-31 18:52:31.065 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2190.6647ms
+2025-03-31 18:52:31.065 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:52:31.065 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:52:31.066 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2198.9195ms
+2025-03-31 18:52:34.283 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 76
+2025-03-31 18:52:34.283 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:52:34.283 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:52:34.285 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:52:34.2849760+05:30"
+2025-03-31 18:52:35.102 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 76
+2025-03-31 18:52:35.102 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:52:35.102 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:52:35.104 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:52:35.1041770+05:30"
+2025-03-31 18:52:36.384 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2100.9472ms
+2025-03-31 18:52:36.385 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:52:36.385 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:52:36.386 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2103.4348ms
+2025-03-31 18:52:38.616 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 3513.886ms
+2025-03-31 18:52:38.617 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:52:38.617 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:52:38.619 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 3517.0912ms
+2025-03-31 18:53:12.214 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 76
+2025-03-31 18:53:12.215 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:53:12.215 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:53:12.217 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:53:12.2174800+05:30"
+2025-03-31 18:53:14.208 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 1992.7454ms
+2025-03-31 18:53:14.210 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:53:14.210 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:53:14.211 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 1997.2424ms
+2025-03-31 18:55:35.652 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 18:55:35.682 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:55:35.684 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 18:55:35.687 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 18:55:35.691 +05:30 [INF] Executed ViewResult - view Index executed in 4.2946ms.
+2025-03-31 18:55:35.691 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 7.3415ms
+2025-03-31 18:55:35.691 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 18:55:35.692 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 67.2321ms
+2025-03-31 18:55:35.719 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 18:55:35.720 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.7469ms
+2025-03-31 18:55:35.720 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 18:55:35.722 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/js/shipment.js - null null
+2025-03-31 18:55:35.738 +05:30 [INF] Sending file. Request path: '/js/shipment.js'. Physical path: '/Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/wwwroot/js/shipment.js'
+2025-03-31 18:55:35.738 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/js/shipment.js - 200 2463 text/javascript 16.1828ms
+2025-03-31 18:55:35.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 18:55:35.753 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:55:35.753 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:55:35.753 +05:30 [INF] GET all shipments requested at "2025-03-31T18:55:35.7539770+05:30"
+2025-03-31 18:55:35.875 +05:30 [INF] Returning 3 shipments
+2025-03-31 18:55:35.875 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 18:55:35.876 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 122.4666ms
+2025-03-31 18:55:35.876 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 18:55:35.876 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 123.4144ms
+2025-03-31 18:55:41.098 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 76
+2025-03-31 18:55:41.098 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:55:41.098 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 18:55:41.099 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T18:55:41.0999000+05:30"
+2025-03-31 18:55:43.300 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2202.3737ms
+2025-03-31 18:55:43.301 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 18:55:43.301 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 18:55:43.302 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2205.2001ms
+2025-03-31 19:06:54.254 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - null null
+2025-03-31 19:06:54.258 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-03-31 19:06:54.259 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-03-31 19:06:54.259 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 405 0 null 55.5231ms
+2025-03-31 19:07:15.304 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - null 0
+2025-03-31 19:07:15.307 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:07:15.308 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:07:15.319 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-03-31 19:07:15.336 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 28.3339ms
+2025-03-31 19:07:15.336 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:07:15.336 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 415 null application/problem+json; charset=utf-8 32.292ms
+2025-03-31 19:11:37.744 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status? - application/json 0
+2025-03-31 19:11:37.745 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:11:37.746 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:11:37.752 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-31 19:11:37.761 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 15.662ms
+2025-03-31 19:11:37.762 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:11:37.762 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status? - 400 null application/problem+json; charset=utf-8 18.039ms
+2025-03-31 19:15:26.212 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 19:15:26.217 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 19:15:26.218 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 19:15:26.222 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 19:15:26.225 +05:30 [INF] Executed ViewResult - view Index executed in 3.8767ms.
+2025-03-31 19:15:26.225 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 6.6717ms
+2025-03-31 19:15:26.226 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 19:15:26.226 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 58.0872ms
+2025-03-31 19:15:26.252 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 19:15:26.253 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.7072ms
+2025-03-31 19:15:26.253 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 19:15:26.256 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/js/shipment.js - null null
+2025-03-31 19:15:26.314 +05:30 [INF] Sending file. Request path: '/js/shipment.js'. Physical path: '/Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/wwwroot/js/shipment.js'
+2025-03-31 19:15:26.316 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/js/shipment.js - 200 2762 text/javascript 59.96ms
+2025-03-31 19:15:26.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:15:26.317 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:15:26.317 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:15:26.317 +05:30 [INF] GET all shipments requested at "2025-03-31T19:15:26.3178650+05:30"
+2025-03-31 19:15:26.468 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/favicon.ico - null null
+2025-03-31 19:15:26.547 +05:30 [INF] The file /favicon.ico was not modified
+2025-03-31 19:15:26.547 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/favicon.ico - 304 null image/x-icon 104.181ms
+2025-03-31 19:15:26.555 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:15:26.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:15:26.556 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 239.4282ms
+2025-03-31 19:15:26.556 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:15:26.556 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 240.1ms
+2025-03-31 19:15:33.743 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 86
+2025-03-31 19:15:33.744 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:15:33.744 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:15:33.745 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T19:15:33.7456070+05:30"
+2025-03-31 19:15:35.014 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 86
+2025-03-31 19:15:35.014 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:15:35.015 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:15:35.017 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T19:15:35.0177140+05:30"
+2025-03-31 19:15:36.278 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2533.3012ms
+2025-03-31 19:15:36.278 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:15:36.278 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:15:36.280 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2536.8333ms
+2025-03-31 19:15:37.020 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2005.2886ms
+2025-03-31 19:15:37.020 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:15:37.021 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:15:37.022 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2008.7099ms
+2025-03-31 19:16:16.955 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:16:16.955 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:16:16.956 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:16:16.956 +05:30 [INF] GET all shipments requested at "2025-03-31T19:16:16.9568600+05:30"
+2025-03-31 19:16:17.089 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:16:17.158 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:16:17.159 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 203.2912ms
+2025-03-31 19:16:17.159 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:16:17.159 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 204.7307ms
+2025-03-31 19:16:18.051 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:16:18.053 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:16:18.054 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:16:18.054 +05:30 [INF] GET all shipments requested at "2025-03-31T19:16:18.0548870+05:30"
+2025-03-31 19:16:18.160 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:16:18.160 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:16:18.161 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 107.1247ms
+2025-03-31 19:16:18.161 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:16:18.161 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 109.7375ms
+2025-03-31 19:17:00.819 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 86
+2025-03-31 19:17:00.821 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:17:00.821 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:17:00.823 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T19:17:00.8232900+05:30"
+2025-03-31 19:17:02.954 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 2132.3326ms
+2025-03-31 19:17:02.954 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:17:02.954 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:17:02.956 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 2137.0244ms
+2025-03-31 19:17:22.081 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:17:22.081 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:17:22.081 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:17:22.082 +05:30 [INF] GET all shipments requested at "2025-03-31T19:17:22.0819960+05:30"
+2025-03-31 19:17:22.130 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:17:22.180 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:17:22.252 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 170.9016ms
+2025-03-31 19:17:22.252 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:17:22.253 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 171.8276ms
+2025-03-31 19:32:18.068 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 86
+2025-03-31 19:32:18.071 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:32:18.073 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:32:18.078 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T19:32:18.0782600+05:30"
+2025-03-31 19:32:22.204 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 4131.0597ms
+2025-03-31 19:32:22.204 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:32:22.204 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:32:22.206 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 4138.1836ms
+2025-03-31 19:35:33.049 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:35:33.050 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:35:33.050 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:35:33.051 +05:30 [INF] GET all shipments requested at "2025-03-31T19:35:33.0517920+05:30"
+2025-03-31 19:35:33.433 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:35:33.530 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:35:33.532 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 481.6606ms
+2025-03-31 19:35:33.532 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:35:33.533 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 484.0582ms
+2025-03-31 19:39:26.102 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 19:39:26.132 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 19:39:26.211 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 19:39:26.215 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 19:39:26.219 +05:30 [INF] Executed ViewResult - view Index executed in 6.9019ms.
+2025-03-31 19:39:26.219 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 7.9965ms
+2025-03-31 19:39:26.220 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 19:39:26.220 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 118.3237ms
+2025-03-31 19:39:26.245 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 19:39:26.246 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/js/shipment.js - null null
+2025-03-31 19:39:26.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.632ms
+2025-03-31 19:39:26.246 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 19:39:26.246 +05:30 [INF] The file /js/shipment.js was not modified
+2025-03-31 19:39:26.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/js/shipment.js - 304 null text/javascript 0.8874ms
+2025-03-31 19:39:26.260 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:39:26.260 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:39:26.260 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:39:26.260 +05:30 [INF] GET all shipments requested at "2025-03-31T19:39:26.2605170+05:30"
+2025-03-31 19:39:26.406 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/favicon.ico - null null
+2025-03-31 19:39:26.431 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:39:26.506 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:39:26.531 +05:30 [INF] The file /favicon.ico was not modified
+2025-03-31 19:39:26.557 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/favicon.ico - 304 null image/x-icon 179.5465ms
+2025-03-31 19:39:26.557 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 296.8395ms
+2025-03-31 19:39:26.557 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:39:26.557 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 297.2481ms
+2025-03-31 19:39:33.418 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 78
+2025-03-31 19:39:33.418 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:39:33.418 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:39:33.420 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T19:39:33.4201410+05:30"
+2025-03-31 19:39:33.781 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 362.5322ms
+2025-03-31 19:39:33.781 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:39:33.781 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at EmailService.SendEmailAsync(String to, String subject, String body) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/EmailService.cs:line 34
+   at ShipmentService.UpdateShipmentStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Services/ShipmentService.cs:line 42
+   at ShipmentController.UpdateStatus(String id, ShipmentStatus status) in /Users/presidio/Desktop/Dotnet-Porjects/ShipmentTracking/Controllers/ShipmentController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-31 19:39:33.784 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 500 null text/plain; charset=utf-8 365.8318ms
+2025-03-31 19:39:45.621 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:39:45.622 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:39:45.622 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:39:45.623 +05:30 [INF] GET all shipments requested at "2025-03-31T19:39:45.6231000+05:30"
+2025-03-31 19:39:45.750 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:39:45.801 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:39:45.802 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 179.4505ms
+2025-03-31 19:39:45.802 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:39:45.802 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 181.2219ms
+2025-03-31 19:44:36.141 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 19:44:36.145 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 19:44:36.174 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 19:44:36.277 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 19:44:36.281 +05:30 [INF] Executed ViewResult - view Index executed in 3.9142ms.
+2025-03-31 19:44:36.281 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 81.1065ms
+2025-03-31 19:44:36.281 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 19:44:36.281 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 140.4637ms
+2025-03-31 19:44:36.301 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 19:44:36.302 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/js/shipment.js - null null
+2025-03-31 19:44:36.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.6531ms
+2025-03-31 19:44:36.302 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 19:44:36.302 +05:30 [INF] The file /js/shipment.js was not modified
+2025-03-31 19:44:36.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/js/shipment.js - 304 null text/javascript 0.425ms
+2025-03-31 19:44:36.312 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:44:36.313 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:44:36.313 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:44:36.313 +05:30 [INF] GET all shipments requested at "2025-03-31T19:44:36.3134540+05:30"
+2025-03-31 19:44:36.487 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:44:36.488 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:44:36.488 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 175.1852ms
+2025-03-31 19:44:36.488 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:44:36.488 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 175.8793ms
+2025-03-31 19:44:42.712 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - application/json 86
+2025-03-31 19:44:42.713 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:44:42.714 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:44:42.715 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec9 at "2025-03-31T19:44:42.7152790+05:30"
+2025-03-31 19:44:47.643 +05:30 [INF] Status updated successfully for shipment 67ea77137d5e8156fc223ec9
+2025-03-31 19:44:47.649 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-03-31 19:44:47.649 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 4935.3164ms
+2025-03-31 19:44:47.649 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:44:47.649 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec9/status - 200 0 null 4937.8309ms
+2025-03-31 19:44:47.652 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:44:47.653 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:44:47.653 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:44:47.653 +05:30 [INF] GET all shipments requested at "2025-03-31T19:44:47.6534660+05:30"
+2025-03-31 19:44:47.754 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:44:47.780 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:44:47.855 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 201.9412ms
+2025-03-31 19:44:47.855 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:44:47.855 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 202.785ms
+2025-03-31 19:47:17.961 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/ - null null
+2025-03-31 19:47:17.962 +05:30 [INF] Executing endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 19:47:17.963 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HomeController (ShipmentTracking).
+2025-03-31 19:47:17.966 +05:30 [INF] Executing ViewResult, running view Index.
+2025-03-31 19:47:17.969 +05:30 [INF] Executed ViewResult - view Index executed in 4.0725ms.
+2025-03-31 19:47:17.970 +05:30 [INF] Executed action HomeController.Index (ShipmentTracking) in 6.3435ms
+2025-03-31 19:47:17.970 +05:30 [INF] Executed endpoint 'HomeController.Index (ShipmentTracking)'
+2025-03-31 19:47:17.970 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/ - 200 null text/html; charset=utf-8 9.4252ms
+2025-03-31 19:47:17.984 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 19:47:17.985 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.8758ms
+2025-03-31 19:47:17.986 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 19:47:18.020 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:47:18.020 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:47:18.021 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:47:18.021 +05:30 [INF] GET all shipments requested at "2025-03-31T19:47:18.0212930+05:30"
+2025-03-31 19:47:18.206 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:47:18.232 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:47:18.280 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 259.4714ms
+2025-03-31 19:47:18.280 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:47:18.280 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 260.0659ms
+2025-03-31 19:47:27.465 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec8/status - application/json 86
+2025-03-31 19:47:27.465 +05:30 [INF] Executing endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:47:27.466 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(System.String, ShipmentStatus) on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:47:27.468 +05:30 [INF] POST status update for shipment 67ea77137d5e8156fc223ec8 at "2025-03-31T19:47:27.4684280+05:30"
+2025-03-31 19:47:31.225 +05:30 [INF] Status updated successfully for shipment 67ea77137d5e8156fc223ec8
+2025-03-31 19:47:31.226 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-03-31 19:47:31.226 +05:30 [INF] Executed action ShipmentController.UpdateStatus (ShipmentTracking) in 3760.3311ms
+2025-03-31 19:47:31.226 +05:30 [INF] Executed endpoint 'ShipmentController.UpdateStatus (ShipmentTracking)'
+2025-03-31 19:47:31.226 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5175/api/shipment/67ea77137d5e8156fc223ec8/status - 200 0 null 3761.2593ms
+2025-03-31 19:47:31.231 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:47:31.231 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:47:31.231 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:47:31.231 +05:30 [INF] GET all shipments requested at "2025-03-31T19:47:31.2317710+05:30"
+2025-03-31 19:47:31.333 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:47:31.360 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:47:31.381 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 150.2484ms
+2025-03-31 19:47:31.382 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:47:31.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 151.1378ms
+2025-03-31 19:48:44.828 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/Home/CustomerDashboard?trackingNumber=SH987654321 - null null
+2025-03-31 19:48:44.831 +05:30 [INF] Executing endpoint 'HomeController.CustomerDashboard (ShipmentTracking)'
+2025-03-31 19:48:44.831 +05:30 [INF] Route matched with {action = "CustomerDashboard", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerDashboard(System.String) on controller HomeController (ShipmentTracking).
+2025-03-31 19:48:45.062 +05:30 [INF] Executing ViewResult, running view CustomerDashboard.
+2025-03-31 19:48:45.065 +05:30 [INF] Executed ViewResult - view CustomerDashboard executed in 3.7375ms.
+2025-03-31 19:48:45.065 +05:30 [INF] Executed action HomeController.CustomerDashboard (ShipmentTracking) in 233.1412ms
+2025-03-31 19:48:45.065 +05:30 [INF] Executed endpoint 'HomeController.CustomerDashboard (ShipmentTracking)'
+2025-03-31 19:48:45.065 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/Home/CustomerDashboard?trackingNumber=SH987654321 - 200 null text/html; charset=utf-8 237.3641ms
+2025-03-31 19:48:45.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - null null
+2025-03-31 19:48:45.083 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/lib/signalr/signalr.js - 404 0 null 0.2256ms
+2025-03-31 19:48:45.083 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5175/lib/signalr/signalr.js, Response status code: 404
+2025-03-31 19:48:45.085 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/js/shipment.js - null null
+2025-03-31 19:48:45.086 +05:30 [INF] The file /js/shipment.js was not modified
+2025-03-31 19:48:45.086 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/js/shipment.js - 304 null text/javascript 0.4994ms
+2025-03-31 19:48:45.094 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5175/api/shipment - null null
+2025-03-31 19:48:45.095 +05:30 [INF] Executing endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:48:45.095 +05:30 [INF] Route matched with {action = "GetAll", controller = "Shipment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ShipmentController (ShipmentTracking).
+2025-03-31 19:48:45.095 +05:30 [INF] GET all shipments requested at "2025-03-31T19:48:45.0955270+05:30"
+2025-03-31 19:48:45.147 +05:30 [INF] Returning 3 shipments
+2025-03-31 19:48:45.173 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Shipment, ShipmentTracking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-31 19:48:45.174 +05:30 [INF] Executed action ShipmentController.GetAll (ShipmentTracking) in 78.9022ms
+2025-03-31 19:48:45.174 +05:30 [INF] Executed endpoint 'ShipmentController.GetAll (ShipmentTracking)'
+2025-03-31 19:48:45.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5175/api/shipment - 200 null application/json; charset=utf-8 79.3671ms
