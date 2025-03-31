@@ -1,0 +1,46 @@
+﻿@model List<Shipment>
+
+<h2>Shipment Management</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tracking Number</th>
+            <th>Current Status</th>
+            <th>Customer Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="shipmentGrid">
+        <!-- Populated via JS -->
+    </tbody>
+</table>
+
+<div class="modal fade" id="statusModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Update Status</h5>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="shipmentId">
+                <div class="form-group">
+                    <label>Status</label>
+                    <select class="form-control" id="statusSelect">
+                        <option value="Dispatched">Dispatched</option>
+                        <option value="In Transit">In Transit</option>
+                        <option value="Hub Update">Hub Update</option>
+                        <option value="Delivered">Delivered</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" class="form-control" id="locationInput">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="updateStatus()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

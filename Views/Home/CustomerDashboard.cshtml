@@ -1,0 +1,12 @@
+@model Shipment
+
+<h2>Track Your Shipment: @Model.TrackingNumber</h2>
+
+<div id="statusUpdates">
+    @foreach (var status in Model.StatusHistory)
+    {
+        <div class="alert alert-info">
+            @status.Status - @status.Location (@status.Timestamp)
+        </div>
+    }
+</div>
